@@ -19,5 +19,5 @@ for i in range(len(ans)):
         img = requests.get(image_url) 
     except:
         continue
-    with open('C:/Users/M10817021/Desktop/webnorm/img/%d.png'%(i+1),'wb') as f: 
+    with open(filepath+'%d.png'%(i+1),'wb') as f: 
         f.write(img.content)#byte格式
